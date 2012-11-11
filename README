@@ -1,9 +1,11 @@
 Usage:
 ast-pp "Ast" < ast.ml > pp.ml
-where Ast is the name of the module ast.ml, which is the module containing the structures you want to pretty-print
-and pp.ml is the file you want the pretty printer to be in
+where Ast is the name of the module ast.ml, which is the module containing the structures you want to pretty-print and pp.ml is the file you want the pretty printer to be in
 
 In pp.ml then, are is a function in the form of
 let string_of_xyz obj = ...
 for each type xyz defined in ast.ml
 
+Installation:
+cd build; make
+this generates the ast-pp executable; you may move it into a directory in your path if you like
